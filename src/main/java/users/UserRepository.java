@@ -1,3 +1,5 @@
+package users;
+
 import java.util.function.Predicate;
 
 public interface UserRepository {

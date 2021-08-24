@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+package users;
+
 import java.util.function.Predicate;
 
 public class UserService {
@@ -25,7 +25,7 @@ public class UserService {
     public User getUser(Predicate<User> option){
         return  userRepository.getUser(option);
     }
-    private  boolean existsUser(Predicate<User> option){
+    private boolean existsUser(Predicate<User> option){
         return getUser(option) != null;
     }
 }

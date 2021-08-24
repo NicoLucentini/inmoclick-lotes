@@ -1,3 +1,5 @@
+package users;
+
 public class User {
     private String realName;
     private String nickName;

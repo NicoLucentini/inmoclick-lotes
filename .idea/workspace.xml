@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="341d9025-8490-4369-b1a9-6b9a962f657b" name="Changes" comment="" />
+    <list default="true" id="341d9025-8490-4369-b1a9-6b9a962f657b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/infra/InMemoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InMemoryUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Twitter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TwitterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/InMemoryUserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Twitter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TwitterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserServiceTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -34,14 +52,21 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -58,11 +83,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwitterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FollowServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TwitterAppplication" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TwitterTest" />
+      <option name="MAIN_CLASS_NAME" value="FollowServiceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FollowServiceTest.aUserCanFollowOtherUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TwitterAppplication" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FollowServiceTest" />
+      <option name="METHOD_NAME" value="aUserCanFollowOtherUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FollowServiceTest.aUserCanFollowOtherUser_ExistentFollowage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TwitterAppplication" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FollowServiceTest" />
+      <option name="METHOD_NAME" value="aUserCanFollowOtherUser_ExistentFollowage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,33 +121,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.RegisterSuccesfull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TwitterAppplication" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
-      <option name="METHOD_NAME" value="RegisterSuccesfull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.UpdateNameSuccesfull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TwitterAppplication" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
-      <option name="METHOD_NAME" value="UpdateNameSuccesfull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in TwitterAppplication" />
-        <item itemvalue="JUnit.TwitterTest" />
+        <item itemvalue="JUnit.FollowServiceTest" />
+        <item itemvalue="JUnit.FollowServiceTest.aUserCanFollowOtherUser_ExistentFollowage" />
+        <item itemvalue="JUnit.FollowServiceTest.aUserCanFollowOtherUser" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.UpdateNameSuccesfull" />
-        <item itemvalue="JUnit.UserServiceTest.RegisterSuccesfull" />
       </list>
     </recent_temporary>
   </component>
@@ -144,12 +169,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/InMemoryUserRepository.java</url>
-          <line>21</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/infra/InMemoryRepository.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
