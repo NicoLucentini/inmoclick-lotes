@@ -1,43 +1,45 @@
+package services;
+
 import infra.InMemoryRepository;
 import org.junit.Assert;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 import users.User;
 import users.UserService;
 
 public class UserServiceTest {
 
-    private  static UserService userService;
-    private  static InMemoryRepository inMemoryUserRepository;
-    @BeforeClass
-    public  static void AfterClass(){
+    private   UserService userService;
+    private   InMemoryRepository inMemoryUserRepository;
+
+    private  User user;
+    @Before
+    public  void init(){
      inMemoryUserRepository = new InMemoryRepository();
      userService = new UserService(inMemoryUserRepository);
+     user = new User("Nicolas Lucentini", "@nicolaslucentini");
     }
 
     @Test
     public void GetUserTest(){
-        User user = new User("Nicolas Lucentini", "@pepe");
-        userService.register(user);
+        //voy a inyectar a mano el usuario en el repository.
+        inMemoryUserRepository.addUser(user);
+
         User res = userService.getUser(x->x.equals(user));
         Assert.assertEquals(user,res);
-
     }
-
 
     @Test
     public  void RegisterSuccesfull(){
-        User user = new User("Nicolas Lucentini", "@nicolaslucentini");
         userService.register(user);
 
         Assert.assertNotNull(userService.getUser(x->x.equals(user)));
     }
     @Test
     public  void RegisterUnsuccesfull(){
-        User user = new User("Nicolas Lucentini", "@nicolucentini");
         userService.register(user);
 
-        User user2 = new User("Pepe Lucentini", "@nicolucentini");
+        User user2 = new User("Pepe Lucentini", "@nicolaslucentini");
         userService.register(user2);
 
         Assert.assertNull(userService.getUser(x->x.equals(user2)));

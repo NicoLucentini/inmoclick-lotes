@@ -15,25 +15,21 @@ public class FollowService {
         this.userService = userService;
     }
 
-    public void follow(String current, String target){
-        User from = userService.getUser(x->x.getNickName().equals(current));
-        User to = userService.getUser(x->x.getNickName().equals(target));
+    public void follow(Follow follow){
+        User from = userService.getUser(x->x.getNickName().equals(follow.getUser()));
+        User to = userService.getUser(x->x.getNickName().equals(follow.getOther()));
 
-        if(from == null || to ==null)
+        //TODO throws an exception
+        if(!userService.existsUserByNickname(follow.getUser()) || !userService.existsUserByNickname(follow.getOther()))
             return;
 
-       Optional<Follow> followage = getFollowage(current, target);
+       Optional<Follow> followage = getFollowage(follow.getUser(), follow.getOther());
        if(followage.isEmpty())
-           followRepository.follow(current, target);
+           followRepository.follow(follow);
        else{
-           Follow follow = followage.get();
-           if(!follow.isActive())
-           {
-                follow.setActive(true);
-                followRepository.save(follow);
-           }
-       }
-    }
+            followRepository.save(follow);
+        }
+   }
 
     public List<Follow> getFollows(String nickName){
         return followRepository.getFollows(nickName)
@@ -51,6 +47,9 @@ public class FollowService {
     }
 
     private Optional<Follow> getFollowage(String from, String to){
-        return followRepository.getFollows(from).stream().filter(x->x.getOther().equals(to)).findFirst();
+        return followRepository.getFollows(from)
+                .stream()
+                .filter(x->x.getOther().equals(to))
+                .findFirst();
     }
 }

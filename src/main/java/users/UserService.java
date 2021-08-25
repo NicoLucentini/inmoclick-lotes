@@ -10,7 +10,7 @@ public class UserService {
     }
 
     public void register(User user){
-       if(existsUser(x->x.getNickName().equals(user.getNickName())))
+       if(existsUserByNickname(user.getNickName()))
         System.out.println("Usuario Ya existente");
        else
         userRepository.addUser(user);
@@ -25,7 +25,7 @@ public class UserService {
     public User getUser(Predicate<User> option){
         return  userRepository.getUser(option);
     }
-    private boolean existsUser(Predicate<User> option){
-        return getUser(option) != null;
+    public boolean existsUserByNickname(String nickName){
+        return getUser(x->x.getNickName().equals(nickName)) != null;
     }
 }

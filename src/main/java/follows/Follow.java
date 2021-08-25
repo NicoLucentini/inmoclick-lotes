@@ -25,4 +25,8 @@ public class Follow {
     public void setActive(boolean active){
         this.active = active;
     }
+
+    public  boolean matches(String user,String other){
+        return this.user.equals(user) && this.other.equals(other);
+    }
 }

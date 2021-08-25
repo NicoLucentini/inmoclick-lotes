@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="341d9025-8490-4369-b1a9-6b9a962f657b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/infra/InMemoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/services/FollowServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InMemoryUserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Twitter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TwitterTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/InMemoryUserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Twitter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TwitterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/follows/Follow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/follows/Follow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/follows/FollowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/follows/FollowRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/follows/FollowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/follows/FollowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/infra/InMemoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/InMemoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FollowServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/follows/Follow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/follows/Follow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/follows/FollowRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/follows/FollowRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/follows/FollowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/follows/FollowService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/infra/InMemoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/infra/InMemoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/users/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/users/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/FollowServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FollowServiceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,9 +37,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1x05rKsdor3xKxTzHiqXGvkvirf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -85,38 +81,40 @@
     </configuration>
     <configuration name="FollowServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TwitterAppplication" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FollowServiceTest" />
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.FollowServiceTest" />
+      <option name="METHOD_NAME" value="aNonExistentUserWantToFolowOtherUser" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FollowServiceTest.aUserCanFollowOtherUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FollowServiceTest.aNonExistentUserWantToFolowOtherUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TwitterAppplication" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FollowServiceTest" />
-      <option name="METHOD_NAME" value="aUserCanFollowOtherUser" />
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.FollowServiceTest" />
+      <option name="METHOD_NAME" value="aNonExistentUserWantToFolowOtherUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FollowServiceTest.aUserCanFollowOtherUser_ExistentFollowage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FollowServiceTest.aNonExisterUserWantToFolowOtherUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TwitterAppplication" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FollowServiceTest" />
-      <option name="METHOD_NAME" value="aUserCanFollowOtherUser_ExistentFollowage" />
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.FollowServiceTest" />
+      <option name="METHOD_NAME" value="aNonExisterUserWantToFolowOtherUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.RegisterUnsuccesfull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TwitterAppplication" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.UserServiceTest" />
+      <option name="METHOD_NAME" value="RegisterUnsuccesfull" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,9 +123,9 @@
       <list>
         <item itemvalue="JUnit.All in TwitterAppplication" />
         <item itemvalue="JUnit.FollowServiceTest" />
-        <item itemvalue="JUnit.FollowServiceTest.aUserCanFollowOtherUser_ExistentFollowage" />
-        <item itemvalue="JUnit.FollowServiceTest.aUserCanFollowOtherUser" />
-        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.FollowServiceTest.aNonExistentUserWantToFolowOtherUser" />
+        <item itemvalue="JUnit.FollowServiceTest.aNonExisterUserWantToFolowOtherUser" />
+        <item itemvalue="JUnit.UserServiceTest.RegisterUnsuccesfull" />
       </list>
     </recent_temporary>
   </component>
@@ -164,16 +162,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/infra/InMemoryRepository.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

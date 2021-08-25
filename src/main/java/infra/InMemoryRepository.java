@@ -30,13 +30,14 @@ public class InMemoryRepository implements UserRepository, FollowRepository {
     @Override
     public void updateUser(User user) {
         User inMemory = getUser(x->x.getNickName().equals(user.getNickName()));
+        //Quizas reemplazar la position
         if(inMemory != null)
             inMemory.setRealName(user.getRealName());
     }
 
     @Override
-    public void follow(String from, String to) {
-        follows.add(new Follow(from, to, true));
+    public void follow(Follow follow) {
+        follows.add(follow);
     }
 
     @Override
@@ -55,6 +56,9 @@ public class InMemoryRepository implements UserRepository, FollowRepository {
 
     @Override
     public void save(Follow follow) {
-
+        Optional<Follow> fetch = follows.stream().filter(x->x.matches(follow.getUser(), follow.getOther())).findFirst();
+        if(fetch.isPresent())
+            fetch.get().setActive(follow.isActive());
     }
+
 }
