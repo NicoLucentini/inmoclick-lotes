@@ -1,14 +1,13 @@
 package services;
 
-import com.sun.source.tree.ForLoopTree;
-import follows.FollowService;
-import follows.Follow;
-import infra.InMemoryRepository;
+import twitter.follows.FollowService;
+import twitter.follows.Follow;
+import twitter.infra.InMemoryRepository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import users.User;
-import users.UserService;
+import twitter.users.User;
+import twitter.users.UserService;
 
 import java.util.List;
 

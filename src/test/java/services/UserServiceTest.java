@@ -1,11 +1,11 @@
 package services;
 
-import infra.InMemoryRepository;
+import twitter.infra.InMemoryRepository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import users.User;
-import users.UserService;
+import twitter.users.User;
+import twitter.users.UserService;
 
 public class UserServiceTest {
 
