@@ -24,4 +24,12 @@ public class User {
     public void setNickName(String nickName) {
         this.nickName = nickName;
     }
+
+
+    public UserJpa convert(){
+       return new UserJpa(this.realName, this.nickName);
+    }
+    public static User parse(UserJpa user){
+        return new User(user.getRealname(), user.getNickname());
+    }
 }

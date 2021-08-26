@@ -16,8 +16,8 @@ public class FollowService {
     }
 
     public void follow(Follow follow){
-        User from = userService.getUser(x->x.getNickName().equals(follow.getUser()));
-        User to = userService.getUser(x->x.getNickName().equals(follow.getOther()));
+        User from = userService.getUser(follow.getUser());
+        User to = userService.getUser(follow.getOther());
 
         //TODO throws an exception
         if(!userService.existsUserByNickname(follow.getUser()) || !userService.existsUserByNickname(follow.getOther()))

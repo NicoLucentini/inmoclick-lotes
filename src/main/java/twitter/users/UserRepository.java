@@ -1,9 +1,7 @@
 package twitter.users;
 
-import java.util.function.Predicate;
-
 public interface UserRepository {
     void addUser(User user);
-    User getUser(Predicate<User> option);
+    User getUser(String nickname);
     void updateUser(User user);
 }

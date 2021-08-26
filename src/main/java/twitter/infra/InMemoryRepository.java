@@ -8,7 +8,6 @@ import twitter.users.UserRepository;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class InMemoryRepository implements UserRepository, FollowRepository {
@@ -16,9 +15,9 @@ public class InMemoryRepository implements UserRepository, FollowRepository {
     private List<User> users = new ArrayList<>();
     private List<Follow> follows = new ArrayList<>();
     @Override
-    public User getUser(Predicate<User> option) {
+    public User getUser(String nickname) {
       return users.stream()
-              .filter(option)
+              .filter(x->x.getNickName().equals(nickname))
               .findFirst()
               .orElse(null);
     }
@@ -29,7 +28,7 @@ public class InMemoryRepository implements UserRepository, FollowRepository {
     }
     @Override
     public void updateUser(User user) {
-        User inMemory = getUser(x->x.getNickName().equals(user.getNickName()));
+        User inMemory = getUser(user.getNickName());
         //Quizas reemplazar la position
         if(inMemory != null)
             inMemory.setRealName(user.getRealName());

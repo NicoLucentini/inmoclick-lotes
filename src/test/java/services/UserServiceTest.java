@@ -25,7 +25,7 @@ public class UserServiceTest {
         //voy a inyectar a mano el usuario en el repository.
         inMemoryUserRepository.addUser(user);
 
-        User res = userService.getUser(x->x.equals(user));
+        User res = userService.getUser(user.getNickName());
         Assert.assertEquals(user,res);
     }
 
@@ -33,7 +33,7 @@ public class UserServiceTest {
     public  void RegisterSuccesfull(){
         userService.register(user);
 
-        Assert.assertNotNull(userService.getUser(x->x.equals(user)));
+        Assert.assertNotNull(userService.getUser(user.getNickName()));
     }
     @Test
     public  void RegisterUnsuccesfull(){
@@ -42,7 +42,9 @@ public class UserServiceTest {
         User user2 = new User("Pepe Lucentini", "@nicolaslucentini");
         userService.register(user2);
 
-        Assert.assertNull(userService.getUser(x->x.equals(user2)));
+        User res = userService.getUser(user2.getNickName());
+
+        Assert.assertNotEquals(res, user2);
     }
     @Test
     public  void UpdateNameSuccesfull(){
@@ -53,9 +55,9 @@ public class UserServiceTest {
 
         userService.update(user);
 
-        Assert.assertEquals("Nico Lucentini",
-                userService.getUser(x->x.getNickName().equals(user.getNickName()))
-                        .getRealName());
+        User res = userService.getUser(user.getNickName());
+
+        Assert.assertEquals(res.getRealName(), "Nico Lucentini");
 
     }
 }

@@ -16,16 +16,16 @@ public class UserService {
         userRepository.addUser(user);
     }
     public  void update(User newUserData){
-        User user = getUser(x->x.getNickName().equals(newUserData.getNickName()));
+        User user = getUser(newUserData.getNickName());
         if(user == null)
             System.out.println("Usuario no existente");
         else
             userRepository.updateUser(user);
     }
-    public User getUser(Predicate<User> option){
-        return  userRepository.getUser(option);
+    public User getUser(String nickname){
+        return  userRepository.getUser(nickname);
     }
     public boolean existsUserByNickname(String nickName){
-        return getUser(x->x.getNickName().equals(nickName)) != null;
+        return getUser(nickName) != null;
     }
 }
