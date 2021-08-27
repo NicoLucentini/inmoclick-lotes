@@ -1,11 +1,14 @@
 package twitter.users;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Table(name = "USERS")
+@Entity
 public class UserJpa {
+    public UserJpa(){}
     @Id
     @Column(name = "NICKNAME")
     private String nickname;

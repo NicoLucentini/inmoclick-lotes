@@ -6,18 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="341d9025-8490-4369-b1a9-6b9a962f657b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/follows/Follow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/Follow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/infra/InMemoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/infra/InMemoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/twitter/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/users/UserJpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/users/UserJpa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/users/UserJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/users/UserJpaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/twitter/users/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/users/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/twitter/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/users/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/twitter/users/UsersJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/users/UsersJpaAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/services/FollowServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/FollowServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/services/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/twitter/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/Follow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/follows/Follow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/follows/FollowService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/infra/InMemoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/infra/InMemoryRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserJpa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/users/UserJpa.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/users/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/users/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UsersJpaAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/users/UsersJpaAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/services/FollowServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/services/FollowServiceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/services/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/services/UserServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +46,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1x05rKsdor3xKxTzHiqXGvkvirf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -68,8 +87,8 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in TwitterAppplication">
-    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.services in TwitterAppplication">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="twitter.App" />
       <module name="TwitterAppplication" />
       <extension name="coverage">
@@ -82,49 +101,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="twitter.infra.App" />
-      <module name="TwitterAppplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in TwitterAppplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TwitterAppplication" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FollowServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TwitterAppplication" />
-      <option name="PACKAGE_NAME" value="services" />
-      <option name="MAIN_CLASS_NAME" value="services.FollowServiceTest" />
-      <option name="METHOD_NAME" value="aNonExistentUserWantToFolowOtherUser" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TwitterAppplication" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="uniqueId" />
       <uniqueIds>
-        <uniqueId value="[engine:junit-vintage]/[runner:services.UserServiceTest]" />
+        <uniqueId value="[engine:junit-vintage]/[runner:services.UserRepositoryTest]" />
       </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TwitterAppplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="getUser" />
+      <option name="TEST_OBJECT" value="class" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-vintage]/[runner:services.UserRepositoryTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TwitterAppplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="getUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-vintage]/[runner:services.UserRepositoryTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="services in TwitterAppplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TwitterAppplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in TwitterAppplication" />
-        <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="Application.App (1)" />
+        <item itemvalue="JUnit.services in TwitterAppplication" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.FollowServiceTest" />
+        <item itemvalue="JUnit.UserRepositoryTest.getUser" />
+        <item itemvalue="JUnit.UserRepositoryTest" />
+        <item itemvalue="JUnit.UserRepositoryTest (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -161,5 +207,36 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/twitter/users/UserController.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/twitter/users/UsersJpaAdapter.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/twitter/users/UserService.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/twitter/users/UserService.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/twitter/users/UserService.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

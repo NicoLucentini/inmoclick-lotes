@@ -6,6 +6,7 @@ import twitter.infra.InMemoryRepository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import twitter.users.DuplicateUserException;
 import twitter.users.User;
 import twitter.users.UserService;
 
@@ -20,7 +21,7 @@ public class FollowServiceTest {
     Follow follow;
 
     @Before
-    public void init(){
+    public void init() throws DuplicateUserException {
 
         memory = new InMemoryRepository();
         userService = new UserService(memory);

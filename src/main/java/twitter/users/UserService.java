@@ -1,27 +1,33 @@
 package twitter.users;
 
-import java.util.function.Predicate;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
 public class UserService {
-
+    @Autowired
     private UserRepository userRepository;
+
+    public  UserService(){}
     public UserService(UserRepository userRepository){
         this.userRepository = userRepository;
     }
 
-    public void register(User user){
+    public void register(User user) throws DuplicateUserException{
        if(existsUserByNickname(user.getNickName()))
-        System.out.println("Usuario Ya existente");
+           throw  new DuplicateUserException("Usuario ya existente");
        else
         userRepository.addUser(user);
     }
-    public  void update(User newUserData){
-        User user = getUser(newUserData.getNickName());
-        if(user == null)
-            System.out.println("Usuario no existente");
+    public  void update(User newUserData) throws NonExistentUserException{
+        if(!existsUserByNickname(newUserData.getNickName()))
+           throw new NonExistentUserException("Usuario no existente");
         else
-            userRepository.updateUser(user);
+            userRepository.updateUser(newUserData);
     }
+
+
     public User getUser(String nickname){
         return  userRepository.getUser(nickname);
     }

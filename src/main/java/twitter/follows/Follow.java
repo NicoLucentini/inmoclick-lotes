@@ -3,7 +3,7 @@ package twitter.follows;
 public class Follow {
     private String user;
     private String other;
-    private boolean active; // 0 user follows other, 1 other follows user, 2 each follows each
+    private boolean active;
 
     public Follow(String user, String other, boolean status) {
         this.user = user;
@@ -22,6 +22,7 @@ public class Follow {
     public boolean isActive() {
         return active;
     }
+
     public void setActive(boolean active){
         this.active = active;
     }

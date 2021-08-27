@@ -26,9 +26,7 @@ public class FollowService {
        Optional<Follow> followage = getFollowage(follow.getUser(), follow.getOther());
        if(followage.isEmpty())
            followRepository.follow(follow);
-       else{
-            followRepository.save(follow);
-        }
+
    }
 
     public List<Follow> getFollows(String nickName){

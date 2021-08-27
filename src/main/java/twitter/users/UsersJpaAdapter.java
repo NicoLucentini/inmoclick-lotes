@@ -1,14 +1,21 @@
 package twitter.users;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
+@Repository
 public class UsersJpaAdapter implements  UserRepository{
 
-    @Autowired
-    private UserJpaRepository repository;
 
+
+    @Autowired
+    UserJpaRepository repository;
+
+    public  UsersJpaAdapter(UserJpaRepository repository){
+        this.repository = repository;
+    }
     @Override
     public void addUser(User user) {
         repository.save(user.convert());

@@ -27,7 +27,7 @@ public class User {
 
 
     public UserJpa convert(){
-       return new UserJpa(this.realName, this.nickName);
+       return new UserJpa(this.nickName, this.realName);
     }
     public static User parse(UserJpa user){
         return new User(user.getRealname(), user.getNickname());
