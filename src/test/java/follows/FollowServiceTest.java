@@ -1,4 +1,4 @@
-package services;
+package follows;
 
 import twitter.follows.FollowService;
 import twitter.follows.Follow;

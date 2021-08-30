@@ -15,7 +15,7 @@ public class UserController {
     public ResponseEntity registerUser(@RequestBody User user){
         try {
             userService.register(user);
-            return  ResponseEntity.ok(user);
+            return  ResponseEntity.status(201).body(user);
         }
         catch (DuplicateUserException e){
             return  ResponseEntity.badRequest().body(e.getMessage());

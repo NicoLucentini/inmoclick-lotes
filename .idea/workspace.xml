@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="341d9025-8490-4369-b1a9-6b9a962f657b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowJpa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowJpaAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/twitter/tweets/Tweet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/follows/FollowControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/follows/Follow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/Follow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/services/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/services/UserRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/Follow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/follows/Follow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/users/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/users/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/services/FollowRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/follows/FollowRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/services/FollowServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/follows/FollowServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/services/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/users/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/services/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/users/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/follows/FollowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/follows/FollowRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/follows/FollowService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/services/UserRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/services/UserRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/users/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/services/FollowRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/services/FollowServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/services/UserRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/services/UserServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,22 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FollowRepositoryTest (4)">
+  <component name="RunManager" selected="JUnit.UserControllerTest">
+    <configuration name="FollowControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TwitterAppplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="users.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="follows" />
+      <option name="MAIN_CLASS_NAME" value="follows.FollowControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FollowRepositoryTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TwitterAppplication" />
       <extension name="coverage">
@@ -133,11 +147,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FollowRepositoryTest (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TwitterAppplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="services.*" />
+          <option name="PATTERN" value="users.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="users" />
+      <option name="MAIN_CLASS_NAME" value="users.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TwitterAppplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,27 +179,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="services in TwitterAppplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TwitterAppplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="services.*" />
+          <option name="PATTERN" value="controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="services" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TwitterAppplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TwitterAppplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="users.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FollowRepositoryTest (4)" />
-        <item itemvalue="JUnit.FollowRepositoryTest (3)" />
-        <item itemvalue="JUnit.FollowRepositoryTest (2)" />
-        <item itemvalue="JUnit.FollowRepositoryTest (1)" />
-        <item itemvalue="JUnit.services in TwitterAppplication" />
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.FollowControllerTest" />
+        <item itemvalue="JUnit.[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" />
+        <item itemvalue="JUnit.[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" />
+        <item itemvalue="JUnit.[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" />
       </list>
     </recent_temporary>
   </component>

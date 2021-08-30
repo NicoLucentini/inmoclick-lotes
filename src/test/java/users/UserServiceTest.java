@@ -1,4 +1,4 @@
-package services;
+package users;
 
 import twitter.infra.InMemoryRepository;
 import org.junit.Assert;
