@@ -10,4 +10,10 @@ public class Tweet {
     }
 
 
+    public TweetJpa toJpa() {
+        return new TweetJpa(user, message);
+    }
+    public static Tweet fromJpa(TweetJpa tweet) {
+        return new Tweet(tweet.getMessage(), tweet.getNickname());
+    }
 }
