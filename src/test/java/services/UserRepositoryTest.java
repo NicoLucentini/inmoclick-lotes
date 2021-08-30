@@ -27,6 +27,7 @@ public class UserRepositoryTest {
     public void init(){
         repository = new UsersJpaAdapter(rep);
     }
+
     @Test
     public  void getUser(){
        User jpa = repository.getUser("blabla");

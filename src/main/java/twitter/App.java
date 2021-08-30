@@ -11,13 +11,5 @@ public class App {
     private static FollowService followService;
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
-
-        //Puedo hacer esto?
-        //UsersJpaAdapter jpaRepository = new UsersJpaAdapter();
-
-        //userService = new UserService(jpaRepository);
-        //followService = new FollowService(userService);
-
-
     }
 }

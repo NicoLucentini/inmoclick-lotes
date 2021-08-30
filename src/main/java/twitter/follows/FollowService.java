@@ -1,19 +1,28 @@
 package twitter.follows;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import twitter.users.User;
 import twitter.users.UserService;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Service
 public class FollowService {
 
+    @Autowired
     private FollowRepository followRepository;
+
+    @Autowired
     private UserService userService;
+
     public FollowService(FollowRepository followRepository, UserService userService){
         this.followRepository = followRepository;
         this.userService = userService;
     }
+
+    public  FollowService(){}
 
     public void follow(Follow follow){
         User from = userService.getUser(follow.getUser());

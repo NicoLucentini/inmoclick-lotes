@@ -30,4 +30,11 @@ public class Follow {
     public  boolean matches(String user,String other){
         return this.user.equals(user) && this.other.equals(other);
     }
+
+    public FollowJpa toJpa(){
+        return new FollowJpa(user, other, active);
+    }
+    public static Follow fromJpa(FollowJpa follow){
+        return new Follow(follow.getFollower(), follow.getFollowee(), follow.isActive());
+    }
 }
