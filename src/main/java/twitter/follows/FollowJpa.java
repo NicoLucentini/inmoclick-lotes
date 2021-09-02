@@ -27,35 +27,17 @@ public class FollowJpa {
         this.active = active;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getFollower() {
         return follower;
-    }
-
-    public void setFollower(String follower) {
-        this.follower = follower;
     }
 
     public String getFollowee() {
         return followee;
     }
 
-    public void setFollowee(String followee) {
-        this.followee = followee;
-    }
-
     public boolean isActive() {
         return active;
     }
 
-    public void setActive(boolean active) {
-        this.active = active;
-    }
 }

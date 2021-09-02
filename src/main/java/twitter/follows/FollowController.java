@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController("/follows")
+@RestController
+@RequestMapping("/follows")
 public class FollowController {
 
     @Autowired
@@ -18,8 +19,8 @@ public class FollowController {
         return  ResponseEntity.status(201).build();
     }
     @GetMapping("/follows/{nickname}")
-    public ResponseEntity getFollows(@RequestParam String nickname){
-        List<Follow> follows = followService.getFollowers(nickname);
+    public ResponseEntity getFollows(@PathVariable String nickname){
+        List<Follow> follows = followService.getFollows(nickname);
         return  ResponseEntity.ok(follows);
     }
 }

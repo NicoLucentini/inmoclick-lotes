@@ -21,7 +21,7 @@ public class TweetController {
     }
 
     @GetMapping("/tweets/{id}")
-    public ResponseEntity getTweets(@RequestParam String nickname) {
+    public ResponseEntity getTweets(@PathVariable String nickname) {
         return ResponseEntity.ok(tweetService.getTweetsByUser(nickname));
     }
 }

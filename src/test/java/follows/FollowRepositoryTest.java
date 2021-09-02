@@ -34,7 +34,8 @@ public class FollowRepositoryTest {
 
     @Test
     public  void registerFollow(){
-        repository.follow(new Follow("nico", "anto",true));
+        repository.follow(new Follow("nico", "anto",true)
+    );
     }
     @Test
     public  void getUser(){

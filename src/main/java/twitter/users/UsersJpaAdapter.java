@@ -17,8 +17,8 @@ public class UsersJpaAdapter implements  UserRepository{
         this.repository = repository;
     }
     @Override
-    public void addUser(User user) {
-        repository.save(user.convert());
+    public User addUser(User user) {
+        return User.parse(repository.save(user.convert()));
     }
 
     @Override

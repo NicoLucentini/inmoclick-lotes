@@ -1,6 +1,5 @@
 package tweets;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +10,9 @@ import twitter.tweets.Tweet;
 import twitter.tweets.TweetService;
 
 import java.util.List;
+import java.util.UUID;
+
+import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = App.class)
@@ -21,15 +23,15 @@ public class TweetServiceTest {
 
     @Test
     public void aUserCanTweet(){
-        Tweet tweet = new Tweet("Test tweet", "nico");
+        String id = UUID.randomUUID().toString();
+        Tweet tweet = new Tweet(id, "nico");
         ts.tweet(tweet);
+        List<Tweet> tweets = ts.getTweetsByUser("nico");
+        assertTrue(tweets.stream().anyMatch(x->x.getMessage().equals(id)));
     }
     @Test
     public void getTweets(){
-
-        Tweet tweet = new Tweet("Test tweet", "nico");
         List<Tweet> tweets = ts.getTweetsByUser("nico");
-
-        Assert.assertTrue(!tweets.isEmpty());
+        assertFalse(tweets.isEmpty());
     }
 }

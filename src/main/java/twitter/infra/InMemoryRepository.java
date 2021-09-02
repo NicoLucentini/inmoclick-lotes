@@ -23,8 +23,9 @@ public class InMemoryRepository implements UserRepository, FollowRepository {
     }
 
     @Override
-    public void addUser(User user) {
+    public User addUser(User user) {
         users.add(user);
+        return user;
     }
     @Override
     public void updateUser(User user) {
@@ -35,8 +36,9 @@ public class InMemoryRepository implements UserRepository, FollowRepository {
     }
 
     @Override
-    public void follow(Follow follow) {
+    public Follow follow(Follow follow) {
         follows.add(follow);
+        return  follow;
     }
 
     @Override

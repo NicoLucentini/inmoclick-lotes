@@ -14,8 +14,9 @@ public class FollowJpaAdapter implements  FollowRepository{
     private FollowJpaRepository followRepository;
 
     @Override
-    public void follow(Follow follow) {
+    public Follow follow(Follow follow) {
         followRepository.save(follow.toJpa());
+        return follow;
     }
 
     @Override

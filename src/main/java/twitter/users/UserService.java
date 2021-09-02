@@ -14,11 +14,11 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public void register(User user) throws DuplicateUserException{
+    public User register(User user) throws DuplicateUserException{
        if(existsUserByNickname(user.getNickName()))
            throw  new DuplicateUserException("Usuario ya existente");
-       else
-        userRepository.addUser(user);
+
+      return  userRepository.addUser(user);
     }
     public  void update(User newUserData) throws NonExistentUserException{
         if(!existsUserByNickname(newUserData.getNickName()))

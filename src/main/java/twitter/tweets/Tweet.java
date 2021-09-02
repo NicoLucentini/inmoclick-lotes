@@ -1,14 +1,21 @@
 package twitter.tweets;
 
 public class Tweet {
-    public String message;
-    public String user;
+    private String message;
+    private String user;
 
     public Tweet(String message, String user) {
         this.message = message;
         this.user = user;
     }
 
+    public String getMessage() {
+        return message;
+    }
+
+    public String getUser() {
+        return user;
+    }
 
     public TweetJpa toJpa() {
         return new TweetJpa(user, message);
