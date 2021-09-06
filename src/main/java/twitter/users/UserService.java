@@ -23,8 +23,8 @@ public class UserService {
     public  void update(User newUserData) throws NonExistentUserException{
         if(!existsUserByNickname(newUserData.getNickName()))
            throw new NonExistentUserException("Usuario no existente");
-        else
-            userRepository.updateUser(newUserData);
+
+        userRepository.updateUser(newUserData);
     }
 
 

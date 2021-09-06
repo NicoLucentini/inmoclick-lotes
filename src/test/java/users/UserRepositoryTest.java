@@ -30,7 +30,7 @@ public class UserRepositoryTest {
 
     @Test
     public  void getUser(){
-       User jpa = repository.getUser("blabla");
+       User jpa = repository.getUser("default");
         Assert.assertNotNull(jpa);
     }
 }

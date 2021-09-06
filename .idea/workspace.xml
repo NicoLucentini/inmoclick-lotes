@@ -7,33 +7,17 @@
     <list default="true" id="341d9025-8490-4369-b1a9-6b9a962f657b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowJpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowJpa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowJpaAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/infra/InMemoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/infra/InMemoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/tweets/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/tweets/Tweet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/follows/FollowService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/twitter/tweets/TweetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/tweets/TweetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/users/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/users/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/twitter/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/users/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twitter/users/UsersJpaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/twitter/users/UsersJpaAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/follows/FollowRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/follows/FollowRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tweets/TweetServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tweets/TweetServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/follows/FollowControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/follows/FollowControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/follows/FollowServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/follows/FollowServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/users/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/users/UserRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/follows/FollowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowJpa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/follows/FollowJpa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowJpaAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/follows/FollowJpaAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/follows/FollowRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/follows/FollowService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/infra/InMemoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/infra/InMemoryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/tweets/Tweet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/tweets/Tweet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/twitter/tweets/TweetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/tweets/TweetController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/users/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/users/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/users/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UsersJpaAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/twitter/users/UsersJpaAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/follows/FollowRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/follows/FollowRepositoryTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/follows/FollowServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/follows/FollowServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tweets/TweetServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tweets/TweetServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/users/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/users/UserServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/users/UserRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/users/UserRepositoryTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +81,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.All in TwitterAppplication">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="twitter.App" />
       <module name="TwitterAppplication" />
@@ -201,18 +185,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TwitterAppplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="services" />
+      <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="uniqueId" />
       <uniqueIds>
-        <uniqueId value="[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" />
+        <uniqueId value="[engine:junit-vintage]/[runner:users.UserRepositoryTest]" />
       </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -252,27 +230,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tweets in TwitterAppplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TwitterAppplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tweets.*" />
+          <option name="PATTERN" value="controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tweets" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-vintage]/[runner:services.FollowRepositoryTest]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.All in TwitterAppplication" />
+        <item itemvalue="JUnit.UserRepositoryTest" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.TweetServiceTest.aUserCanTweet" />
         <item itemvalue="JUnit.TweetServiceTest" />
-        <item itemvalue="JUnit.tweets in TwitterAppplication" />
       </list>
     </recent_temporary>
   </component>
@@ -323,21 +304,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/twitter/users/UsersJpaAdapter.java</url>
           <line>27</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/twitter/users/UserService.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/twitter/users/UserService.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/twitter/users/UserService.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

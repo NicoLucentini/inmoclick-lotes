@@ -3,6 +3,7 @@ package twitter.follows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import twitter.users.NonExistentUserException;
 
 import java.util.List;
 
@@ -15,12 +16,18 @@ public class FollowController {
 
     @PostMapping("/follow")
     public ResponseEntity follow(@RequestBody  Follow follow){
-        followService.follow(follow);
-        return  ResponseEntity.status(201).build();
+        try {
+            Follow data = followService.follow(follow);
+            return  ResponseEntity.status(201).body(data);
+        }
+        catch (NonExistentUserException e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
     @GetMapping("/follows/{nickname}")
     public ResponseEntity getFollows(@PathVariable String nickname){
-        List<Follow> follows = followService.getFollows(nickname);
-        return  ResponseEntity.ok(follows);
+        //List<Follow> follows = followService.getFollows(nickname);
+        ;
+        return  ResponseEntity.ok(followService.fromFollows(nickname));
     }
 }

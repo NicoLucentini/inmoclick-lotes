@@ -7,10 +7,13 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import twitter.users.DuplicateUserException;
+import twitter.users.NonExistentUserException;
 import twitter.users.User;
 import twitter.users.UserService;
 
 import java.util.List;
+
+import static org.junit.Assert.*;
 
 public class FollowServiceTest {
     private FollowService followService;
@@ -39,10 +42,10 @@ public class FollowServiceTest {
 
 
     @Test
-    public void aUserFollowsOtherUser(){
+    public void aUserFollowsOtherUser() throws NonExistentUserException {
         followService.follow(follow);
         List<Follow> follows = followService.getFollows(current.getNickName());
-        Assert.assertTrue(follows
+        assertTrue(follows
                 .stream()
                 .anyMatch(x-> x.matches(current.getNickName(), target.getNickName())));
     }
@@ -54,18 +57,20 @@ public class FollowServiceTest {
 
         List<Follow> followers = followService.getFollowers(target.getNickName());
 
-        Assert.assertTrue(followers.stream()
+        assertTrue(followers.stream()
                 .anyMatch(x-> x.matches(current.getNickName(), target.getNickName())));
     }
 
     @Test
-    public  void aNonExistentUserWantToFollowOtherUser(){
+    public  void aNonExistentUserWantToFollowOtherUser() {
         Follow follow1 = new Follow("@pepe", "@nicol",true);
 
-        followService.follow(follow1);
-        List<Follow> followers = followService.getFollowers("@nicol");
+        Exception exception = assertThrows(NonExistentUserException.class, () -> {
+            followService.follow(follow1);
+        });
 
-        Assert.assertFalse(followers.stream()
-                .anyMatch(x-> x.matches("@pepe", "@nicol")));
+
+      assertEquals("No existe el usuario",exception.getMessage());
+
     }
 }

@@ -20,14 +20,14 @@ public class FollowControllerTest {
     FollowController fc;
     @Test
     public  void getFollowsCorrect(){
-        ResponseEntity response = fc.getFollows("nico");
+        ResponseEntity response = fc.getFollows("default");
 
         Assert.assertEquals(200, response.getStatusCodeValue());
         Assert.assertTrue(response.hasBody());
     }
     @Test
     public  void addFollowCorrect(){
-        ResponseEntity response = fc.follow(new Follow("nico", "anto", true));
+        ResponseEntity response = fc.follow(new Follow("default", "default1", true));
         Assert.assertEquals(201, response.getStatusCodeValue());
     }
 }
