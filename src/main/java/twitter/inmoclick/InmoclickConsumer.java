@@ -41,12 +41,7 @@ public class InmoclickConsumer {
     private String cleanJsonToMakeItArray(String finalString, Integer amount){
         //Evitar esto luego
         for(int i = 0; i< amount +1;i++){
-            if(finalString.contains("\""+i +"\":")){
-                System.out.println("Contiene" + i);
-            }
-            else{
-                System.out.println("------- no Contiene" + i);
-            }
+           
             finalString = finalString.replaceFirst("\""+i +"\":","");
         }
 
