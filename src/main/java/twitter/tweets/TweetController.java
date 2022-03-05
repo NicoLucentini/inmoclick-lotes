@@ -25,3 +25,5 @@ public class TweetController {
         return ResponseEntity.ok(tweetService.getTweetsByUser(nickname));
     }
 }
+
+
