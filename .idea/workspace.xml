@@ -5,47 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="341d9025-8490-4369-b1a9-6b9a962f657b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/Follow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowJpa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowJpaAdapter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowJpaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/follows/FollowService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/infra/InMemoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/inmoclick/InmoclickConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/inmoclick/InmoclickController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/inmoclick/InmoclickPropiedad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/inmoclick/InmoclickPropiedades.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/test/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/test/Perro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/tweets/Tweet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/tweets/TweetController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/tweets/TweetJpa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/tweets/TweetRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/tweets/TweetService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/DuplicateUserException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/NonExistentUserException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserJpa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserJpaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/twitter/users/UsersJpaAdapter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/follows/FollowControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/follows/FollowRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/follows/FollowServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/inmoclick/InmoclickServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tweets/TweetServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tweets/TweetsControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/users/UserControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/users/UserRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/users/UserServiceTest.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/system.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
