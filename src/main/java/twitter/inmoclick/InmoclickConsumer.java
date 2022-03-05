@@ -19,6 +19,26 @@ public class InmoclickConsumer {
     private String urlCasas = "https://www.inmoclick.com.ar/inmuebles/casas-en-venta?favoritos=0&limit=10000&prevEstadoMap=&q=Mendoza&lastZoom=13&precio%5Bmin%5D=&precio%5Bmax%5D=&moneda=1&sup_cubierta%5Bmin%5D=&sup_cubierta%5Bmax%5D=&sup_total%5Bmin%5D=&sup_total%5Bmax%5D=";
     private String urlDepartamentos = "https://www.inmoclick.com.ar/inmuebles/departamentos-en-venta?favoritos=0&limit=10000&prevEstadoMap=&q=Mendoza&lastZoom=13&precio%5Bmin%5D=&precio%5Bmax%5D=&moneda=1&sup_cubierta%5Bmin%5D=&sup_cubierta%5Bmax%5D=&sup_total%5Bmin%5D=&sup_total%5Bmax%5D=";
 
+
+    public List<InmoclickPropiedad> casas = new ArrayList<>();
+    public List<InmoclickPropiedad> lotes = new ArrayList<>();
+    public List<InmoclickPropiedad> departamentos = new ArrayList<>();
+
+    public void LoadValues(){
+
+        long start1 = System.currentTimeMillis();
+        System.out.println("Start loading values");
+        casas = listCasas();
+        lotes = listLotes();
+        departamentos = listDepartamentos();
+
+
+        System.out.println("Finish loading values");
+        long end = System.currentTimeMillis();
+
+        System.out.println("Elapsed Time in milli seconds: "+ (end-start1));
+    }
+
     private Integer getAmount(String response){
         var split1 = response.split("h2");
         var lotes = split1[1].split("h2");
@@ -40,10 +60,12 @@ public class InmoclickConsumer {
 
     private String cleanJsonToMakeItArray(String finalString, Integer amount){
         //Evitar esto luego
+
         for(int i = 0; i< amount +1;i++){
-           
             finalString = finalString.replaceFirst("\""+i +"\":","");
         }
+
+
 
         finalString = finalString.substring(1, finalString.length() -1);
 
@@ -54,8 +76,13 @@ public class InmoclickConsumer {
 
 
     private List<InmoclickPropiedad> consumePage(String url){
+
+        long start1 = System.currentTimeMillis();
         RestTemplate rest = new RestTemplate();
         String response = rest.getForObject(url, String.class);
+        long end = System.currentTimeMillis();
+
+        System.out.println("Elapsed Time in milli seconds: "+ (end-start1));
 
         Integer amountFromPage = getAmount(response);
         System.out.println("AmountFromPage: " + amountFromPage);

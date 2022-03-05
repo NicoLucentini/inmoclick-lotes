@@ -16,7 +16,8 @@ public class InmoclickController {
     @GetMapping("/lotes")
     public ResponseEntity listLotes(){
         try {
-            var res = consumer.listLotes();
+            //var res = consumer.listLotes();
+            var res = consumer.lotes;
             return  ResponseEntity.status(200).body(res);
         }
         catch (Exception e){
@@ -26,7 +27,8 @@ public class InmoclickController {
     @GetMapping("/casas")
     public ResponseEntity listCasas(){
         try {
-            var res = consumer.listCasas();
+            //var res = consumer.listCasas();
+            var res = consumer.casas;
             return  ResponseEntity.status(200).body(res);
         }
         catch (Exception e){
@@ -36,7 +38,8 @@ public class InmoclickController {
     @GetMapping("/departamentos")
     public ResponseEntity listDepartamentos(){
         try {
-            var res = consumer.listDepartamentos();
+            //var res = consumer.listDepartamentos();
+            var res = consumer.departamentos;
             return  ResponseEntity.status(200).body(res);
         }
         catch (Exception e){
