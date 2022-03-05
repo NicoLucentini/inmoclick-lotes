@@ -29,8 +29,8 @@ public class InmoclickConsumer {
         long start1 = System.currentTimeMillis();
         System.out.println("Start loading values");
         casas = listCasas();
-       // lotes = listLotes();
-        //departamentos = listDepartamentos();
+        lotes = listLotes();
+        departamentos = listDepartamentos();
 
 
         System.out.println("Finish loading values");
