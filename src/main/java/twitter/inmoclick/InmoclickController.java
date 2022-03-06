@@ -3,8 +3,6 @@ package twitter.inmoclick;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import twitter.users.DuplicateUserException;
-import twitter.users.User;
 
 @RestController
 @RequestMapping("/propiedades")
@@ -19,6 +17,23 @@ public class InmoclickController {
             //var res = consumer.listLotes();
             var res = consumer.lotes;
             return  ResponseEntity.status(200).body(res);
+        }
+        catch (Exception e){
+            return  ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @Autowired
+    LotesLoader lotesLoader;
+
+    @GetMapping("/load")
+    public ResponseEntity listLotesLoad(){
+        try {
+
+
+            lotesLoader.run();
+
+            return  ResponseEntity.ok("Ok");
         }
         catch (Exception e){
             return  ResponseEntity.badRequest().body(e.getMessage());

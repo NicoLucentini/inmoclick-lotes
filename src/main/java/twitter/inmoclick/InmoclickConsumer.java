@@ -103,6 +103,16 @@ public class InmoclickConsumer {
     }
 
 
+    public void LoadLotes(){
+        lotes = listLotes();
+    }
+    public void LoadCasas(){
+        casas = listCasas();
+    }
+    public void LoadDepartamentos(){
+        departamentos = listDepartamentos();
+    }
+
     public List<InmoclickPropiedad> listLotes(){
         return consumePage(urlLotes);
     }
