@@ -23,6 +23,7 @@ public class InmoclickConsumer {
 
     public void LoadValues(){
 
+        lotes.clear();
         long start1 = System.currentTimeMillis();
         System.out.println("Start loading values");
         lotes = listLotes();
