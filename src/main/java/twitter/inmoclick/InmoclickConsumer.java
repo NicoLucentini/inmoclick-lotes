@@ -16,23 +16,16 @@ public class InmoclickConsumer {
 
 
     private String urlLotes ="https://www.inmoclick.com.ar/inmuebles/lotes-y-terrenos-en-venta?favoritos=0&limit=2791&prevEstadoMap=&q=Mendoza&lastZoom=13&precio%5Bmin%5D=&precio%5Bmax%5D=&moneda=1&sup_cubierta%5Bmin%5D=&sup_cubierta%5Bmax%5D=&sup_total%5Bmin%5D=&sup_total%5Bmax%5D=&precio_pesos_m2%5Bmin%5D=&precio_pesos_m2%5Bmax%5D=&precio_dolares_m2%5Bmin%5D=&precio_dolares_m2%5Bmax%5D=&expensas%5Bmin%5D=&expensas%5Bmax%5D=";
-    private String urlCasas = "https://www.inmoclick.com.ar/inmuebles/casas-en-venta?favoritos=0&limit=10000&prevEstadoMap=&q=Mendoza&lastZoom=13&precio%5Bmin%5D=&precio%5Bmax%5D=&moneda=1&sup_cubierta%5Bmin%5D=&sup_cubierta%5Bmax%5D=&sup_total%5Bmin%5D=&sup_total%5Bmax%5D=";
-    private String urlDepartamentos = "https://www.inmoclick.com.ar/inmuebles/departamentos-en-venta?favoritos=0&limit=10000&prevEstadoMap=&q=Mendoza&lastZoom=13&precio%5Bmin%5D=&precio%5Bmax%5D=&moneda=1&sup_cubierta%5Bmin%5D=&sup_cubierta%5Bmax%5D=&sup_total%5Bmin%5D=&sup_total%5Bmax%5D=";
 
 
-    public List<InmoclickPropiedad> casas = new ArrayList<>();
+
     public List<InmoclickPropiedad> lotes = new ArrayList<>();
-    public List<InmoclickPropiedad> departamentos = new ArrayList<>();
 
     public void LoadValues(){
 
         long start1 = System.currentTimeMillis();
         System.out.println("Start loading values");
-        casas = listCasas();
         lotes = listLotes();
-        departamentos = listDepartamentos();
-
-
         System.out.println("Finish loading values");
         long end = System.currentTimeMillis();
 
@@ -106,23 +99,11 @@ public class InmoclickConsumer {
     public void LoadLotes(){
         lotes = listLotes();
     }
-    public void LoadCasas(){
-        casas = listCasas();
-    }
-    public void LoadDepartamentos(){
-        departamentos = listDepartamentos();
-    }
+
 
     public List<InmoclickPropiedad> listLotes(){
         return consumePage(urlLotes);
     }
 
-    public List<InmoclickPropiedad> listCasas(){
-        return consumePage(urlCasas);
-    }
-
-    public List<InmoclickPropiedad> listDepartamentos(){
-        return consumePage(urlDepartamentos);
-    }
 
 }

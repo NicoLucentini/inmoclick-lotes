@@ -25,16 +25,5 @@ public class InmoclickServiceTest {
        List<InmoclickPropiedad> propiedades =  consumer.listLotes();
        Assert.assertTrue(!propiedades.isEmpty());
     }
-    @Test
-    public  void testConsumerCasas(){
 
-        List<InmoclickPropiedad> propiedades =  consumer.listCasas();
-        Assert.assertTrue(!propiedades.isEmpty());
-    }
-    @Test
-    public  void testConsumerDepartamentos(){
-
-        List<InmoclickPropiedad> propiedades =  consumer.listDepartamentos();
-        Assert.assertTrue(!propiedades.isEmpty());
-    }
 }

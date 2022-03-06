@@ -23,7 +23,7 @@ public class App implements CommandLineRunner {
 
         timer.schedule(new TimerTask(){
             public void run(){
-                //consumer.LoadValues();
+                consumer.LoadValues();
             }
         },date, 24*60*60*1000);
 

@@ -38,6 +38,7 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/follows/FollowControllerTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/follows/FollowRepositoryTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/follows/FollowServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/inmoclick/InmoclickServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/inmoclick/InmoclickServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tweets/TweetServiceTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tweets/TweetsControllerTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/users/UserControllerTest.java" beforeDir="false" />
